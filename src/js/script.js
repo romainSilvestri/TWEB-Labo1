@@ -11,3 +11,17 @@ function follow() {
         i = 0;
     }
 }
+
+function mouseOver(){
+    if(i == 1){
+        document.getElementById("button-follow").style.background="#cc0000";
+        document.getElementById("button-follow").firstChild.data="Unfollow"; 
+    }
+ }
+
+ function mouseOut(){
+    if(i == 1){
+        document.getElementById("button-follow").style.background="#3333ff";
+        document.getElementById("button-follow").firstChild.data="Followed"; 
+    }
+ }
